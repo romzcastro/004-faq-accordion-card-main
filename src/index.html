@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link href="../src/output.css" rel="stylesheet" />
+
+    <script>
+      window.onload = () => {
+        const firstDropdownmenu = document.getElementById(
+          "first-dropdown-menu"
+        );
+        firstDropdownmenu.addEventListener("click", () => {
+          if (firstDropdownmenu.classList.contains("open")) {
+            firstDropdownmenu.classList.remove("open");
+          } else {
+            firstDropdownmenu.classList.add("open");
+          }
+        });
+        const secondDropdownmenu = document.getElementById(
+          "second-dropdown-menu"
+        );
+        secondDropdownmenu.addEventListener("click", () => {
+          if (secondDropdownmenu.classList.contains("open")) {
+            secondDropdownmenu.classList.remove("open");
+          } else {
+            secondDropdownmenu.classList.add("open");
+          }
+        });
+        const thirdDropdownmenu = document.getElementById(
+          "third-dropdown-menu"
+        );
+        thirdDropdownmenu.addEventListener("click", () => {
+          if (thirdDropdownmenu.classList.contains("open")) {
+            thirdDropdownmenu.classList.remove("open");
+          } else {
+            thirdDropdownmenu.classList.add("open");
+          }
+        });
+        const fourthDropdownmenu = document.getElementById(
+          "fourth-dropdown-menu"
+        );
+        fourthDropdownmenu.addEventListener("click", () => {
+          if (fourthDropdownmenu.classList.contains("open")) {
+            fourthDropdownmenu.classList.remove("open");
+          } else {
+            fourthDropdownmenu.classList.add("open");
+          }
+        });
+
+        const fifthDropdownmenu = document.getElementById(
+          "fifth-dropdown-menu"
+        );
+        fifthDropdownmenu.addEventListener("click", () => {
+          if (fifthDropdownmenu.classList.contains("open")) {
+            fifthDropdownmenu.classList.remove("open");
+          } else {
+            fifthDropdownmenu.classList.add("open");
+          }
+        });
+      };
+    </script>
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body
+    class="flex-center min-h-screen bg-gradient-to-tl from-primary_4 to-primary_3 text-center p-6 text-xs"
+  >
+    <main class="flex flex-col w-full flex-center">
+      <!-- wrapper -->
+      <div
+        class="relative flex flex-col max-w-[320px] bg-primary_7 rounded-3xl px-6 pb-6 sm:min-w-[449px] sm:flex-row sm:overflow-hidden sm:max-w-full md:max-w-[922px] md:w-full"
+      >
+        <!-- hero top container -->
+        <div class="relative w-full mt-10 sm:flex-1">
+          <div
+            class="hidden sm:block sm:absolute sm:-left-[20%] sm:max-w-[120%]"
+          >
+            <img
+              src="../images/illustration-woman-online-desktop.svg"
+              alt="illustration-woman-online-desktop"
+            />
+          </div>
+          <div
+            class="hidden sm:block sm:absolute sm:-top-[20%] sm:-left-[35%] sm:max-w-[130%]"
+          >
+            <img
+              src="../images/bg-pattern-desktop.svg"
+              alt="bg-pattern-desktop"
+            />
+          </div>
+
+          <div class="absolute -top-[103%] sm:hidden">
+            <img
+              src="../images/illustration-woman-online-mobile.svg"
+              alt="illustration-woman-online-mobile"
+              width="100%"
+            />
+          </div>
+
+          <img
+            class="sm:hidden"
+            src="../images/bg-pattern-mobile.svg"
+            alt="bg-pattern-mobile"
+            width="100%"
+          />
+        </div>
+        <!-- hero bottom container -->
+        <div class="sm:flex-1 sm:pl-12 sm:pb-14">
+          <h1
+            class="mt-10 font-bold text-4xl text-center text-primary_1 mb-8 sm:text-left sm:mt-14"
+          >
+            FAQ
+          </h1>
+          <!-- container drop down menu -->
+
+          <!-- first drop down menu -->
+          <div
+            id="first-dropdown-menu"
+            class="group relative cursor-pointer text-left transition-all ease-in-out border-b-2 border-primary_6/20 pr-4 pb-3 mb-2 max-w-[240px] sm:min-w-[85%]"
+          >
+            <div class="absolute mt-1 ml-4 top-1 right-0">
+              <img
+                class="group-open:rotate-180 transition-all ease-in-out"
+                src="../images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+            </div>
+            <div
+              class="group-open:font-bold text-primary_1 transition-all ease-in-out pb-1"
+            >
+              How many team members can I invite?
+            </div>
+            <p
+              class="hidden group-open:block text-primary_6 transition-all ease-in-out pr-4"
+            >
+              Are you curious this will work?
+            </p>
+          </div>
+
+          <!-- second drop down menu -->
+          <div
+            id="second-dropdown-menu"
+            class="group relative cursor-pointer text-left transition-all ease-in-out border-b-2 border-primary_6/20 pr-4 pb-3 mb-2 max-w-[240px] sm:min-w-[85%]"
+          >
+            <div class="absolute mt-1 ml-4 top-1 right-0">
+              <img
+                class="group-open:rotate-180 transition-all ease-in-out"
+                src="../images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+            </div>
+            <div
+              class="group-open:font-bold text-primary_1 transition-all ease-in-out pb-1"
+            >
+              What si the maximum file upload size?
+            </div>
+            <p
+              class="hidden group-open:block text-primary_6 transition-all ease-in-out pr-4"
+            >
+              No more than 2GB. All files in your account must fit your alloted
+              storage space.
+            </p>
+          </div>
+
+          <!-- third drop down menu -->
+          <div
+            id="third-dropdown-menu"
+            class="group relative cursor-pointer text-left transition-all ease-in-out border-b-2 border-primary_6/20 pr-4 pb-3 mb-2 max-w-[240px] sm:min-w-[85%]"
+          >
+            <div class="absolute mt-1 ml-4 top-1 right-0">
+              <img
+                class="group-open:rotate-180 transition-all ease-in-out"
+                src="../images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+            </div>
+            <div
+              class="group-open:font-bold text-primary_1 transition-all ease-in-out pb-1"
+            >
+              How do I reset my password?
+            </div>
+            <p
+              class="hidden group-open:block text-primary_6 transition-all ease-in-out pr-4"
+            >
+              Again!? Aren't you a curious fella?
+            </p>
+          </div>
+
+          <!-- fourth drop down menu -->
+          <div
+            id="fourth-dropdown-menu"
+            class="group relative cursor-pointer text-left transition-all ease-in-out border-b-2 border-primary_6/20 pr-4 pb-3 mb-2 max-w-[240px] sm:min-w-[85%]"
+          >
+            <div class="absolute mt-1 ml-4 top-1 right-0">
+              <img
+                class="group-open:rotate-180 transition-all ease-in-out"
+                src="../images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+            </div>
+            <div
+              class="group-open:font-bold text-primary_1 transition-all ease-in-out pb-1"
+            >
+              Can I cancel my subscription?
+            </div>
+            <p
+              class="hidden group-open:block text-primary_6 transition-all ease-in-out pr-4"
+            >
+              What a rebel! there is something in here too!
+            </p>
+          </div>
+
+          <!-- fifth drop down menu -->
+          <div
+            id="fifth-dropdown-menu"
+            class="group relative cursor-pointer text-left transition-all ease-in-out border-b-2 border-primary_6/20 pr-4 pb-3 mb-6 max-w-[240px] sm:min-w-[85%]"
+          >
+            <div class="absolute mt-1 ml-4 top-1 right-0">
+              <img
+                class="group-open:rotate-180 transition-all ease-in-out"
+                src="../images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+            </div>
+            <div
+              class="group-open:font-bold text-primary_1 transition-all ease-in-out pb-1"
+            >
+              Do you provide additional support?
+            </div>
+            <p
+              class="hidden group-open:block text-primary_6 transition-all ease-in-out pr-4"
+            >
+              Okay you win. it all works, happy?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
