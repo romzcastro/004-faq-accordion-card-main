@@ -2648,6 +2648,11 @@ html {
   font-weight: 700;
 }
 
+.group.open .group-open\:text-primary_1{
+  --tw-text-opacity: 1;
+  color: hsl(238 29% 16% / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:absolute{
     position: absolute;
@@ -2728,6 +2733,16 @@ html {
   .group:hover .sm\:group-hover\:text-primary_2{
     --tw-text-opacity: 1;
     color: hsl(14 88% 65% / var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-primary_1{
+    --tw-text-opacity: 1;
+    color: hsl(238 29% 16% / var(--tw-text-opacity));
+  }
+
+  .group:hover.open .sm\:group-hover\:group-open\:text-primary_1{
+    --tw-text-opacity: 1;
+    color: hsl(238 29% 16% / var(--tw-text-opacity));
   }
 }
 
