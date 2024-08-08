@@ -2705,6 +2705,18 @@ html {
     display: none;
   }
 
+  .sm\:h-screen{
+    height: 100vh;
+  }
+
+  .sm\:h-\[200\%\]{
+    height: 200%;
+  }
+
+  .sm\:h-\[750px\]{
+    height: 750px;
+  }
+
   .sm\:min-w-\[449px\]{
     min-width: 449px;
   }
