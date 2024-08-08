@@ -77,12 +77,22 @@
     <main class="flex flex-col w-full flex-center">
       <!-- wrapper -->
       <div
-        class="relative flex flex-col max-w-[320px] bg-primary_7 rounded-3xl px-6 pb-6 sm:min-w-[449px] sm:flex-row sm:overflow-hidden sm:max-w-full md:max-w-[922px] md:w-full"
+        class="relative flex flex-col max-w-[320px] bg-primary_7 rounded-3xl px-6 pb-6 sm:min-w-[449px] sm:flex-row sm:max-w-full md:max-w-[922px] md:w-full sm:px-0 sm:pb-0 sm:z-0"
       >
+        <div
+          class="hidden sm:block sm:absolute sm:-left-[10%] sm:top-[40%] sm:z-20"
+        >
+          <img
+            src="./images/illustration-box-desktop.svg"
+            alt="illustration-box-desktop"
+          />
+        </div>
         <!-- hero top container -->
-        <div class="relative w-full mt-10 sm:flex-1">
+        <div
+          class="relative w-full mt-10 sm:flex-1 sm:overflow-hidden sm:z-auto"
+        >
           <div
-            class="hidden sm:block sm:absolute sm:-left-[20%] sm:max-w-[120%]"
+            class="hidden sm:block sm:absolute sm:-left-[15%] sm:max-w-[100%] sm:z-10"
           >
             <img
               src="./images/illustration-woman-online-desktop.svg"
@@ -90,7 +100,7 @@
             />
           </div>
           <div
-            class="hidden sm:block sm:absolute sm:-top-[20%] sm:-left-[35%] sm:max-w-[130%]"
+            class="hidden sm:block sm:absolute sm:-top-[20%] sm:-left-[35%] sm:max-w-[120%]"
           >
             <img
               src="./images/bg-pattern-desktop.svg"

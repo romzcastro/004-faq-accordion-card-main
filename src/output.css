@@ -2653,16 +2653,44 @@ html {
     position: absolute;
   }
 
-  .sm\:-left-\[20\%\]{
-    left: -20%;
+  .sm\:-left-\[15\%\]{
+    left: -15%;
   }
 
   .sm\:-left-\[35\%\]{
     left: -35%;
   }
 
+  .sm\:-left-\[9\%\]{
+    left: -9%;
+  }
+
   .sm\:-top-\[20\%\]{
     top: -20%;
+  }
+
+  .sm\:top-\[40\%\]{
+    top: 40%;
+  }
+
+  .sm\:-left-\[10\%\]{
+    left: -10%;
+  }
+
+  .sm\:z-0{
+    z-index: 0;
+  }
+
+  .sm\:z-10{
+    z-index: 10;
+  }
+
+  .sm\:z-20{
+    z-index: 20;
+  }
+
+  .sm\:z-auto{
+    z-index: auto;
   }
 
   .sm\:mt-14{
@@ -2685,12 +2713,12 @@ html {
     min-width: 85%;
   }
 
-  .sm\:max-w-\[120\%\]{
-    max-width: 120%;
+  .sm\:max-w-\[100\%\]{
+    max-width: 100%;
   }
 
-  .sm\:max-w-\[130\%\]{
-    max-width: 130%;
+  .sm\:max-w-\[120\%\]{
+    max-width: 120%;
   }
 
   .sm\:max-w-full{
@@ -2707,6 +2735,15 @@ html {
 
   .sm\:overflow-hidden{
     overflow: hidden;
+  }
+
+  .sm\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .sm\:pb-0{
+    padding-bottom: 0px;
   }
 
   .sm\:pb-14{
